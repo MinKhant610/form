@@ -1,20 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <SignUp/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import SignUp from "./components/Sign-up.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SignUp,
   }
 }
 </script>
 
 <style>
+/* Only App.vue can select index.html styel */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +23,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body{
+  margin: 0;
+  background: #eee;
 }
 </style>
